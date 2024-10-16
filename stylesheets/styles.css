@@ -1,0 +1,136 @@
+* {
+    font-family: 'Poppins', 'Open-sans', sans-serif;;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: hsl(0, 0%, 96%);
+    line-height: 1.6;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: left;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: left;
+    padding: 2rem;
+    color: hsl(0, 0%, 96%);
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 96%);
+}
+
+header {
+    background-color: #1b1b1b;
+    color: white;
+    padding: .25rem 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    position: sticky;
+    z-index: 1000;
+}
+
+header img {
+    margin-top: 1vh;
+    height: 10vh;
+    margin-left: 5vh
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+header .navbar ul li {
+    margin: 0 0.9375rem;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    position: relative;
+    display: inline-block;
+}
+
+header .navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom middle;
+    transition: 0.25s ease-out;
+}
+
+header .navbar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom middle;
+}
+
+header .navbar ul li:last-child a {
+    padding: .5rem;
+    border-radius: .5em;
+    background-color: #4745b700;
+    background: linear-gradient(to top right, #98b8e3, #475186);
+}
+
+header .navbar ul li:last-child a::after {
+    height: 0;
+}
+
+header .navbar ul li:last-child a:hover {
+    background: linear-gradient(to top right, #7e99bc, #38406a);
+    box-shadow:
+   1px 1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+    transition: 0.25s ease-in;
+}
+
+header .navbar ul li:last-child a:not(:hover) {
+    background-color: rgba(71, 69, 183, 0);
+    transition: 0.25s ease-in;
+}
